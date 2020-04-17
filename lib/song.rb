@@ -63,8 +63,7 @@ class Song
     new_song = self.new 
     new_song.name = filename.split(" - ")[1].split(".")[0]
     new_song.artist_name = filename.split(" - ")[0]
-    @@all << self
-    new_song
+    @@all << new_song
   end
   
   def self.destroy_all
